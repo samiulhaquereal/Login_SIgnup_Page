@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 import 'package:liquid_swipe/liquid_swipe.dart';
 import 'package:login_signup/src/constands/colors.dart';
 import 'package:login_signup/src/features/authentication/controllers/on_boarding_controller.dart';
@@ -46,16 +47,18 @@ class OnBoardingScreen extends StatelessWidget {
               child: TextButton(
             onPressed: () => obcontroller.skip() ,
           child: Text("Skip",style: TextStyle(color: Colors.grey),),)),
-          Positioned(
-              bottom: 10,
-              child: AnimatedSmoothIndicator(
-                activeIndex: obcontroller.controller.currentPage,
-                count: 3,
-                effect: WormEffect(
-                  activeDotColor: Color(0xFF272727),
-                  dotHeight: 5.0
-                ),
-              ))
+          Obx(
+              () => Positioned(
+                bottom: 10,
+                child: AnimatedSmoothIndicator(
+                  activeIndex: obcontroller.currentPage.value,
+                  count: 3,
+                  effect: WormEffect(
+                    activeDotColor: Color(0xFF272727),
+                    dotHeight: 5.0
+                  ),
+                )),
+          )
         ],
       ),
     );
