@@ -1,11 +1,11 @@
 import 'package:get/get.dart';
 import 'package:liquid_swipe/PageHelpers/LiquidController.dart';
-
 import '../../../constands/colors.dart';
 import '../../../constands/image_strings.dart';
 import '../../../constands/text_strings.dart';
 import '../models/model_on_boarding.dart';
 import '../screens/on_boarding/on_boarding_page_widget.dart';
+import '../screens/welcome_screen/welcome_screen.dart';
 
 class OnBoardingController extends GetxController{
   final controller = LiquidController();
@@ -40,6 +40,9 @@ class OnBoardingController extends GetxController{
   animateToNextSlide(){
     int nextpage = controller.currentPage +1;
     controller.animateToPage(page: nextpage);
+    if(nextpage>=3){
+      Get.off(Welcome());
+    }
   }
 
 }
