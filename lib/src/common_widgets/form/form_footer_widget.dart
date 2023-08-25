@@ -26,7 +26,7 @@ class FormFooterWidget extends StatelessWidget {
               image: AssetImage(tGoogleLogoImage),
               width: 20,
             ),
-            label: Text(tSignInWithGoogle),
+            label: Text(tSignInWithGoogle.toUpperCase()),
           ),
         ),
         SizedBox(height: tFormHeight - 20),

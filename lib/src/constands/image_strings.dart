@@ -8,4 +8,5 @@ const String tOnBoardingImage3 = "assets/images/on_boarding_images/page_3.png";
 
 
 const String tGoogleLogoImage = "assets/logo/google.png";
+const String tForgetPasswordImage = "assets/logo/forgotpassword.png";
 

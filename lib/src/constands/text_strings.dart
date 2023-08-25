@@ -31,6 +31,19 @@ const String tSignUpTitle = "Get On Board!";
 const String tSignUpSubTitle = "Create your profile to start your Journey with us...";
 const String tFullName = "Full Name";
 const String tPhoneNo = "Phone No";
+const String tNext = "Next";
+
+
+const String tForgetPasswordTitle = "Make Selection!";
+const String tForgetPasswordSubTitle = "Select one of the options given below to reset your password.";
+const String tResetViaEmail = "Reset via E-mail Verification";
+const String tResetViaPhone = "Reset via Phone Verification";
+const String tForgetPhoneTitle = "Enter your registered phone No to receive OTP";
+const String tForgetPhoneSubTitle = "Enter your registered E-mail to receive OTP";
+
+const String tOtpTitle = "CO\nDE";
+const String tOtpSubTitle = "Verification";
+const String tOtpMessage = "Enter the verification code sent at ";
 
 
 
