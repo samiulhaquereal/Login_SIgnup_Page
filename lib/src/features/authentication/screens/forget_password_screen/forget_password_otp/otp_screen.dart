@@ -1,9 +1,12 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_otp_text_field/flutter_otp_text_field.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:login_signup/src/constands/sizes.dart';
 import 'package:login_signup/src/constands/text_strings.dart';
+import 'package:login_signup/src/features/core/screens/dashboard_screen/dashboard_screen.dart';
 
 class OTPScreen extends StatelessWidget {
   const OTPScreen({super.key});
@@ -35,7 +38,7 @@ class OTPScreen extends StatelessWidget {
             SizedBox(height: 20,),
             SizedBox(
                 width: double.infinity,
-                child: ElevatedButton(onPressed: (){}, child: Text(tNext))),
+                child: ElevatedButton(onPressed: ()=>Get.to(DashboardScreen()), child: Text(tNext))),
           ],
         ),
       ),
