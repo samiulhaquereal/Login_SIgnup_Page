@@ -27,5 +27,10 @@ const String tPassword = "Password";
 const String tForgetPassword = "Forget Password?";
 const String tSignInWithGoogle = "Sign-In with Google";
 const String tDontHaveAccount = "Don't have an Account?";
+const String tSignUpTitle = "Get On Board!";
+const String tSignUpSubTitle = "Create your profile to start your Journey with us...";
+const String tFullName = "Full Name";
+const String tPhoneNo = "Phone No";
+
 
 

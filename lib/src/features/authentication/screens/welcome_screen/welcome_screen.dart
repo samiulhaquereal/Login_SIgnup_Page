@@ -8,6 +8,7 @@ import 'package:login_signup/src/constands/sizes.dart';
 
 import '../../../../constands/text_strings.dart';
 import '../login_screen/login_screen.dart';
+import '../signup_screen/signup_screen.dart';
 
 class Welcome extends StatelessWidget {
   const Welcome({super.key});
@@ -56,7 +57,7 @@ class Welcome extends StatelessWidget {
                 ),
                 Expanded(
                     child: ElevatedButton(
-                        onPressed: () {},
+                        onPressed: () => Get.to(SignUpScreen()),
                         child: Text(tSign_Up.toUpperCase()))),
               ],
             )

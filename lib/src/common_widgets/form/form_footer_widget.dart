@@ -1,15 +1,15 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../../../../constands/colors.dart';
-import '../../../../constands/image_strings.dart';
-import '../../../../constands/sizes.dart';
-import '../../../../constands/text_strings.dart';
+import '../../constands/colors.dart';
+import '../../constands/image_strings.dart';
+import '../../constands/sizes.dart';
+import '../../constands/text_strings.dart';
 
-class LoginFooterWidget extends StatelessWidget {
-  const LoginFooterWidget({
-    super.key,
-  });
+class FormFooterWidget extends StatelessWidget {
+  const FormFooterWidget({super.key, required this.normalText, required this.RichText});
+
+  final String normalText,RichText;
 
   @override
   Widget build(BuildContext context) {
@@ -30,9 +30,10 @@ class LoginFooterWidget extends StatelessWidget {
           ),
         ),
         SizedBox(height: tFormHeight - 20),
-        TextButton(onPressed: (){}, child: Text.rich(TextSpan(text: tDontHaveAccount,style: TextStyle(color: tSecondaryColor),children: [
-          TextSpan(text: tSign_Up,style: TextStyle(color: Colors.deepPurple))
-        ])))
+        TextButton(onPressed: (){}, child: Text.rich(TextSpan(text: normalText,style: TextStyle(color: tSecondaryColor),
+            children: [
+              TextSpan(text: RichText,style: TextStyle(color: Colors.deepPurple))
+            ])))
       ],
     );
   }
