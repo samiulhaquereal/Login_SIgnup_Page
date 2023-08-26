@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
+import 'package:login_signup/src/repository/authentication_repository/authentication_repository.dart';
 
 import '../../../../../constands/colors.dart';
 import '../../../../../constands/text_strings.dart';
@@ -30,7 +31,9 @@ class DashboardAppBar extends StatelessWidget implements PreferredSizeWidget{
           decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10), color: tCardBgColor),
           child: IconButton(
-            onPressed: () {},
+            onPressed: () {
+              AuthenticationRepository.instance.logout();
+            },
             icon: Icon(
               Icons.person_outline_rounded,
               color: Colors.black,

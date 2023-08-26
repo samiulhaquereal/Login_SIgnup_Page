@@ -10,7 +10,6 @@ import '../../../../common_widgets/form/form_header_widget.dart';
 
 class SignUpScreen extends StatelessWidget {
   const SignUpScreen({super.key});
-
   @override
   Widget build(BuildContext context) {
     return SafeArea(child: Scaffold(
