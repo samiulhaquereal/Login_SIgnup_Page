@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get/get_core/src/get_main.dart';
+import 'package:login_signup/src/features/authentication/screens/forget_password_screen/forget_password_otp/otp_screen.dart';
 
 import '../../../../constands/sizes.dart';
 import '../../../../constands/text_strings.dart';
@@ -59,7 +60,9 @@ class SignUpForm extends StatelessWidget {
                 width: double.infinity,
                 child: ElevatedButton(onPressed: (){
                   if(_formKey.currentState!.validate()){
-                    SignUpController.instance.registerUser(controller.email.text.trim(), controller.password.text.trim());
+                    //SignUpController.instance.registerUser(controller.email.text.trim(), controller.password.text.trim());
+                    SignUpController.instance.phoneAuthentication(controller.phoneNo.text.trim());
+                    Get.to(() => OTPScreen());
                   }
                 }, child: Text(tSign_Up.toUpperCase())))
           ],
