@@ -57,3 +57,25 @@ const String tDashboardTopCourses = "Top Courses";
 
 
 
+
+const String tProfile = "Profile";
+const String tEditProfile = "Edit Profile";
+const String tLogoutDialogHeading = "Logout";
+const String tProfileHeading = "B.M.Samiul Haque Real";
+const String tProfileSubHeading = "superAdmin@resoftltd.com";
+
+const String tMenu5 = tLogoutDialogHeading;
+const String tMenu1 = "Settings";
+const String tMenu4 = "Information";
+const String tMenu2 = "Billing Details";
+const String tMenu3 = "User Management";
+
+
+const String tDelete = "Delete";
+const String tJoined = "Joined";
+const String tJoinedAt = "06 April 2001";
+
+
+
+
+

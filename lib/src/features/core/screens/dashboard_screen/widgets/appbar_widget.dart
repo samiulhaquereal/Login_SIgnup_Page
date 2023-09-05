@@ -1,10 +1,13 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
+import 'package:get/get_core/src/get_main.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:login_signup/src/repository/authentication_repository/authentication_repository.dart';
 
 import '../../../../../constands/colors.dart';
 import '../../../../../constands/text_strings.dart';
+import '../../profile_screens/profile_screen.dart';
 
 class DashboardAppBar extends StatelessWidget implements PreferredSizeWidget{
   const DashboardAppBar({
@@ -32,7 +35,8 @@ class DashboardAppBar extends StatelessWidget implements PreferredSizeWidget{
               borderRadius: BorderRadius.circular(10), color: tCardBgColor),
           child: IconButton(
             onPressed: () {
-              AuthenticationRepository.instance.logout();
+              //AuthenticationRepository.instance.logout();
+              Get.to(ProfileScreen());
             },
             icon: Icon(
               Icons.person_outline_rounded,
